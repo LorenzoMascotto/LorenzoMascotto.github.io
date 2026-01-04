@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video waves</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .video-container {
+      margin-bottom: 20px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Click a button to play a video</h1>
+
+  <div class="video-container">
+    <video id="videoPlayer" width="640" height="360" controls>
+      <source id="videoSource" src="video1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div>
+    <button onclick="changeVideo('video1.mp4')">Video 1</button>
+    <button onclick="changeVideo('video2.mp4')">Video 2</button>
+    <button onclick="changeVideo('video3.mp4')">Video 3</button>
+  </div>
+
+  <script>
+    function changeVideo(videoName) {
+      var videoPlayer = document.getElementById('videoPlayer');
+      var videoSource = document.getElementById('videoSource');
+      
+      // Update the source of the video
+      videoSource.src = videoName;
+
+      // Reload the video to apply the new source
+      videoPlayer.load();
+      videoPlayer.play();
+    }
+  </script>
+</body>
+</html>
