@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video waves</title>
+  <title>Video Waves</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -22,7 +22,7 @@
   </style>
 </head>
 <body>
-  <h1>Click a button to play a video</h1>
+  <h1>Click a button to play and loop a video</h1>
 
   <div class="video-container">
     <video id="videoPlayer" width="640" height="360" controls>
@@ -44,10 +44,13 @@
       
       // Update the source of the video
       videoSource.src = videoName;
-
+      
       // Reload the video to apply the new source
       videoPlayer.load();
       videoPlayer.play();
+      
+      // Enable looping for the selected video
+      videoPlayer.loop = true;
     }
   </script>
 </body>
