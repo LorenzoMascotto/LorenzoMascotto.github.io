@@ -1,121 +1,137 @@
+Skip to content
+You said:
+Can you give me the html (super basic) file for the following `INFORMATION ON THE COURSE Numerical Methods for time-dependent PDEs’’
+
+PREREQUISITES
+•	Sobolev and Bochner spaces
+•	Finite elements for elliptic problems
+
+GOALS
+•	Understanding of parabolic and wave problems
+•	A priori analysis of time-stepping schemes for parabolic and wave (in first and second order formulation) problems
+•	A posteriori error analysis for elliptic, parabolic, and wave problems
+
+SCHEDULE
+•	09.01.2026 (Friday) Lecture 1 – Lorenzo Mascotto (LM)
+•	12.01.2026 (Monday)  Lecture 2 -- LM
+•	13.01.2026 (Tuesday)  Lecture 3 – Sergio Gomez (SG)
+•	15.01.2026 (Thursday)  Lecture 4  -- SG
+•	16.01.2026 (Friday)  Lecture 5 -- SG
+•	19.01.2026 (Monday)  Lecture 6 -- SG
+•	20.01.2026 (Tuesday)  Lecture 7 -- LM
+•	26.01.2026 (Monday)  Lecture 8 – LM
+
+WEBEX LINKS 
+•	https://unimib.webex.com/meet/lorenzo.mascotto
+•	https://unimib.webex.com/meet/sergio.gomez
+
+MATERIAL
+•	Shared folder with notes on the a priori error analysis
+•	Shared folder with notes on the a posteriori error analysis
+
+EXAMS
+•	OPTION 1 standard exam on the course
+•	OPTION 2 `reading’’ exam (upon discussion and agreement with the lecturers, the student prepares a presentation on an article/book-chapter concerning the topics of the course and present it)
+•	The exam is fixed by appointment and agreement with the lecturers''?
+ChatGPT said:
+
+Here is a super basic HTML file for the course information you provided:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Information: Numerical Methods for Time-Dependent PDEs</title>
+    <title>Course Information - Numerical Methods for Time-Dependent PDEs</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
         header {
             background-color: #333;
-            color: white;
-            padding: 15px;
+            color: #fff;
+            padding: 10px 0;
             text-align: center;
         }
-        main {
+        .container {
             width: 80%;
-            margin: 20px auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            overflow: hidden;
         }
-        h1, h2 {
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
             color: #333;
         }
         ul {
-            list-style-type: none;
-            padding-left: 0;
+            list-style-type: square;
+            margin-left: 20px;
         }
-        li {
-            margin-bottom: 10px;
-        }
-        .section-title {
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-        .schedule, .material, .exams {
+        .schedule, .links {
             margin-top: 20px;
         }
-        footer {
-            text-align: center;
+        .exam-options {
+            background-color: #eee;
             padding: 10px;
-            background-color: #333;
-            color: white;
             margin-top: 20px;
+        }
+        .exam-options ul {
+            list-style-type: none;
+        }
+        .exam-options li {
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
 
-<!-- Title on top of the page -->
-<div class="page-title">
-    Information on the course <strong>“Numerical Methods for Time-Dependent PDEs”</strong>
-</div>
+    <header>
+        <h1>Course Information</h1>
+        <h2>Numerical Methods for Time-Dependent PDEs</h2>
+    </header>
 
-<header>
-    <h1>Course Information: Numerical Methods for Time-Dependent PDEs</h1>
-</header>
+    <div class="container">
+        <div class="content">
+            <h3>Prerequisites</h3>
+            <ul>
+                <li>Sobolev and Bochner spaces</li>
+                <li>Finite elements for elliptic problems</li>
+            </ul>
 
-<main>
-    <section class="prerequisites">
-        <h2 class="section-title">PREREQUISITES</h2>
-        <ul>
-            <li>Sobolev and Bochner spaces</li>
-            <li>Finite elements for elliptic problems</li>
-        </ul>
-    </section>
+            <h3>Course Goals</h3>
+            <ul>
+                <li>Understanding of parabolic and wave problems</li>
+                <li>A priori analysis of time-stepping schemes for parabolic and wave problems (first and second order formulation)</li>
+                <li>A posteriori error analysis for elliptic, parabolic, and wave problems</li>
+            </ul>
 
-    <section class="goals">
-        <h2 class="section-title">GOALS</h2>
-        <ul>
-            <li>Understanding of parabolic and wave problems</li>
-            <li>A priori analysis of time-stepping schemes for parabolic and wave (in first and second order formulation) problems</li>
-            <li>A posteriori error analysis for elliptic, parabolic, and wave problems</li>
-        </ul>
-    </section>
+            <div class="schedule">
+                <h3>Schedule</h3>
+                <ul>
+                    <li>09.01.2026 (Friday) Lecture 1 – Lorenzo Mascotto (LM)</li>
+                    <li>12.01.2026 (Monday) Lecture 2 – LM</li>
+                    <li>13.01.2026 (Tuesday) Lecture 3 – Sergio Gomez (SG)</li>
+                    <li>15.01.2026 (Thursday) Lecture 4 – SG</li>
+                    <li>16.01.2026 (Friday) Lecture 5 – SG</li>
+                    <li>19.01.2026 (Monday) Lecture 6 – SG</li>
+                    <li>20.01.2026 (Tuesday) Lecture 7 – LM</li>
+                    <li>26.01.2026 (Monday) Lecture 8 – LM</li>
+                </ul>
+            </div>
 
-    <section class="schedule">
-        <h2 class="section-title">SCHEDULE</h2>
-        <ul>
-            <li>09.01.2026 (Friday) Lecture 1 – Lorenzo Mascotto (LM)</li>
-            <li>12.01.2026 (Monday) Lecture 2 – LM</li>
-            <li>13.01.2026 (Tuesday) Lecture 3 – Sergio Gomez (SG)</li>
-            <li>15.01.2026 (Thursday) Lecture 4 – SG</li>
-            <li>16.01.2026 (Friday) Lecture 5 – SG</li>
-            <li>19.01.2026 (Monday) Lecture 6 – SG</li>
-            <li>20.01.2026 (Tuesday) Lecture 7 – LM</li>
-            <li>26.01.2026 (Monday) Lecture 8 – LM</li>
-        </ul>
-    </section>
+            <div class="links">
+                <h3>Webex Links</h3>
+                <ul>
+                    <li><a href="https://unimib.webex.com/meet/lorenzo.mascotto" target="_blank">Lorenzo Mascotto's Webex</a></li>
 
-    <section class="material">
-        <h2 class="section-title">MATERIAL</h2>
-        <ul>
-            <li>Shared folder with notes on the a priori error analysis</li>
-            <li>Shared folder with notes on the a posteriori error analysis</li>
-        </ul>
-    </section>
 
-    <section class="exams">
-        <h2 class="section-title">EXAMS</h2>
-        <ul>
-            <li><strong>OPTION 1:</strong> Standard exam on the course</li>
-            <li><strong>OPTION 2:</strong> "Reading" exam (upon discussion and agreement with the lecturers, the student prepares a presentation on an article/book-chapter concerning the topics of the course and presents it)</li>
-            <li>The exam is fixed by appointment and agreement with the lecturers</li>
-        </ul>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2026 Your Institution Name</p>
-</footer>
-
-</body>
-</html>
+ChatGPT can make mistakes. Check important info. See Cookie Preferences.
+ChatGPT is still generating a response...
